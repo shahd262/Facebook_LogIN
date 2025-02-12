@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <TextView
+    android:id="@+id/tv_facebook_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="150dp"
+    android:fontFamily="@font/font"
+    android:text="@string/facebook"
+    android:textColor="@color/white"
+    android:textSize="48sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+    <EditText
+        android:id="@+id/e_email"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:autofillHints="emailAddress"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:ems="20"
+        android:hint="@string/email_or_phone_number"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595454"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_facebook_name"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/P_password"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:ems="20"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#595454"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e_email"
+         />
+
+    <Button
+        android:id="@+id/L_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#1BFFFFFF"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="#838181"
+        android:textSize="20sp"
+        app:iconTint="#1EFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P_password" />
+
+    <TextView
+        android:id="@+id/S_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/sign_up_for_facebook"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/L_login" />
+    <TextView
+        android:id="@+id/tv_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/help_center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/S_signup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
